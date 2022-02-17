@@ -1,0 +1,37 @@
+*{
+   margin: 0;
+}
+.header{
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.row{
+  display: flex;
+}
+.col{
+  flex: 33.33%;
+  background-color: rgb(154, 154, 187);
+  margin: 30px;
+  border: 2px solid black;
+  padding: 20px;
+}
+.col .col-head{
+  text-align: center;
+  border: 2px solid black;
+  margin-left: 80%;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.col .chicken{background-color: rgb(214, 168, 137);}
+.col .beef{background-color: rgb(235, 109, 109);}
+.col .shushi{background-color: rgb(245, 234, 77);}
+
+@media(max-width: 1200px){
+  .row{
+     flex-direction: column;
+  }
+  .col .col-head{
+    margin-left: 80%;
+  }
+}
